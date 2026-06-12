@@ -1,0 +1,124 @@
+{
+ "url": "themindfulsmm.com",
+ "evidence": {
+  "reachable": true,
+  "_method": "fetched",
+  "sources": ["https://www.themindfulsmm.com"],
+  "siteName": "The Mindful SMM",
+  "headline": "I BUILD aligned BRANDS THAT FEEL clear, cohesive, AND READY TO grow.",
+  "subheading": "From thoughtful websites to strategic content and brand direction.",
+  "services": ["Brand Strategy", "Website Design", "Creative Direction", "Social Media & Content", "SEO & Visibility"],
+  "keyPhrases": ["You don't need more noise.", "Signs your brand is ready to evolve", "Your business is growing but your brand still looks DIY", "Relying on content instead of conversion", "It speaks for you", "Soul led & sold out — coming soon"],
+  "audienceClues": ["service-based and wellness brands", "holistic businesses, wellness brands, and creative entrepreneurs", "10% off for small businesses"],
+  "toneExamples": ["You don't need more noise. You need clarity, direction, and a brand that actually reflects the work you do.", "Because when your brand is built properly, you don't have to chase. It speaks for you.", "Ready to build a brand that actually feels like you?"],
+  "colorClues": ["turquoise circles motif", "cream circles motif", "soft orb graphics repeated across the page"],
+  "visualClues": ["orb/circle motif used as a signature element", "editorial mixed-case headlines: uppercase with lowercase italic accent words", "client testimonials given full sections", "numbered journey: Discovery, Insight, Transformation, Guidance"],
+  "ctas": ["Services", "Contact", "Start now", "Lets get started"],
+  "industry": "Brand, web design & social media studio",
+  "repeatedThemes": ["clarity (x4)", "brand/aligned (x6)", "intentional/intention (x4)", "grow/growth (x3)", "soul-led (x2)"]
+ },
+ "report": {
+  "brandName": "The Mindful SMM",
+  "industry": {
+   "value": "Brand strategy, web design & social media studio for small businesses",
+   "confidence": "high",
+   "evidence": "Site title: \"Affordable Social Media & Website Design Services For Small Businesses\""
+  },
+  "archetype": {
+   "primary": "The Sage",
+   "secondary": "The Caregiver",
+   "description": "The Mindful SMM leads with clarity and guidance — a calm expert who brings direction to brands that have outgrown DIY — softened by genuine care for the founder behind the business.",
+   "confidence": "medium",
+   "evidence": "Client: \"she guided me in various matters... contributed greatly from her knowledge\""
+  },
+  "audience": {
+   "items": [
+    {"name": "Service-based & wellness brands", "desc": "Holistic businesses, wellness brands and creative entrepreneurs whose work has matured past their branding."},
+    {"name": "Growing small businesses", "desc": "Founders whose \"business is growing but the brand still looks DIY\" — explicitly named on the homepage."},
+    {"name": "The misaligned", "desc": "Owners attracting the wrong clients (or none), whose websites don't reflect their value."}
+   ],
+   "confidence": "high",
+   "evidence": "Page text: \"service-based and wellness brands\" + \"signs your brand is ready to evolve\" list"
+  },
+  "tone": {
+   "description": "Calm, direct, and quietly authoritative. Opens by removing pressure (\"You don't need more noise\") then speaks in clear, short declaratives. Personal without being soft — every line points at clarity, alignment and growth rather than hype.",
+   "sliders": {"gentle_bold": 38, "poetic_practical": 44, "personal_professional": 35, "playful_serious": 62},
+   "confidence": "high",
+   "evidence": "Homepage: \"You don't need more noise. You need clarity, direction...\""
+  },
+  "personality": {
+   "items": [
+    {"trait": "Clear", "score": 92},
+    {"trait": "Intentional", "score": 88},
+    {"trait": "Aligned", "score": 85},
+    {"trait": "Calm", "score": 82},
+    {"trait": "Soul-led", "score": 78}
+   ],
+   "confidence": "high",
+   "evidence": "Word frequency on page: clarity x4, aligned x6, intentional x4; client called the process \"calming\""
+  },
+  "palette": {
+   "items": [
+    {"hex": "#5FB8B0", "name": "Turquoise orb"},
+    {"hex": "#2C6B65", "name": "Deep teal"},
+    {"hex": "#F6F1E8", "name": "Cream"},
+    {"hex": "#E8DFCF", "name": "Soft sand"},
+    {"hex": "#26302D", "name": "Ink"}
+   ],
+   "confidence": "medium",
+   "evidence": "Site imagery is literally named \"Turquoise circles\" and \"Cream circles\" (hexes estimated from imagery, not CSS)"
+  },
+  "typography": {
+   "display": "High-contrast serif with italic accents",
+   "body": "Clean humanist sans",
+   "notes": "The headline style is already a signature: uppercase serif broken by lowercase italic words (\"I BUILD aligned BRANDS\"). Carry that exact pattern into social graphics — it is instantly recognisable.",
+   "confidence": "medium",
+   "evidence": "Homepage headline mixes uppercase and lowercase-italic words: \"I BUILD aligned BRANDS THAT FEEL clear...\""
+  },
+  "visual": {
+   "items": ["floating orb/circle motif", "turquoise on cream", "editorial mixed-case headlines", "generous whitespace", "testimonials styled as features", "numbered journey graphics (Discovery → Guidance)"],
+   "confidence": "high",
+   "evidence": "Orb graphics repeat across the page; journey steps named Discovery, Insight, Transformation, Guidance"
+  },
+  "strengths": {
+   "items": [
+    "A named enemy and promise in one line: \"You don't need more noise\" — clarity over content volume",
+    "The \"signs your brand is ready to evolve\" framework is a ready-made, ownable content series",
+    "Real client proof in the brand's own register: \"calming, and exciting\" — the experience matches the message",
+    "Seven services that ladder into one offer: a brand that \"speaks for you\""
+   ],
+   "confidence": "high",
+   "evidence": "All four quote the homepage directly"
+  },
+  "opportunities": {
+   "items": [
+    "Turn each of the four \"signs your brand is ready to evolve\" into its own carousel — a recurring diagnostic series",
+    "Document the Discovery → Guidance journey with one real client per month, in their words like Mihal's",
+    "Show before/after of \"DIY brand → aligned brand\" using your own project work (The Solace etc.)",
+    "Tease \"Soul led & sold out\" with a waitlist content arc — it's already on the homepage"
+   ],
+   "confidence": "medium",
+   "evidence": "Built from the site's own frameworks, journey steps, project links and coming-soon banner"
+  },
+  "themes": {
+   "items": [
+    {"title": "Signs you're ready to evolve", "desc": "The homepage diagnostic, expanded one sign at a time."},
+    {"title": "The journey", "desc": "Discovery, Insight, Transformation, Guidance — shown through real client work."},
+    {"title": "Clarity over noise", "desc": "Perspective pieces on building brands that speak for themselves."},
+    {"title": "Behind the build", "desc": "Websites, brand shoots and creative direction in progress."}
+   ],
+   "confidence": "high",
+   "evidence": "Themes are the site's own frameworks: \"signs your brand is ready to evolve\" + the four-step journey"
+  },
+  "positioning": {
+   "value": "For service-based and wellness brands that have outgrown DIY, The Mindful SMM builds aligned brands — strategy, websites and content — that speak for you, so you don't have to chase.",
+   "confidence": "high",
+   "evidence": "Homepage: \"when your brand is built properly, you don't have to chase. It speaks for you.\""
+  },
+  "creative": {
+   "value": "Own the orb: make the floating turquoise-on-cream circle the recurring mark across every post. Set headlines in the site's signature uppercase-serif-with-italic-accents pattern, keep layouts airy, and let client words carry the proof — testimonials art-directed like editorial pull quotes.",
+   "confidence": "medium",
+   "evidence": "Derived from the repeated orb graphics, the mixed-case headline style, and testimonial-led page structure"
+  }
+ }
+}

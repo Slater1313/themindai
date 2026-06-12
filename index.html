@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Mindful AI — Content that understands your brand</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Figtree:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="src/styles/main.css">
+<link rel="stylesheet" href="src/styles/report.css">
+</head>
+<body>
+
+<!-- ════════════ LANDING ════════════ -->
+<section class="view active" id="view-landing">
+
+  <nav class="nav" id="nav">
+    <a class="logo" href="#" onclick="go('landing');return false;">
+      <span class="dot"></span>The Mindful <em>AI</em>
+    </a>
+    <div class="nav-links">
+      <a href="#how">How it works</a>
+      <a href="#features">What it does</a>
+      <a href="#words">Kind words</a>
+    </div>
+    <div class="nav-cta">
+      <a class="login" href="#" onclick="go('url');return false;">Log in</a>
+      <button class="btn btn-primary" onclick="go('url')">Get started</button>
+      <button class="burger" id="burger" aria-label="Open menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#how" onclick="toggleMenu()">How it works</a>
+    <a href="#features" onclick="toggleMenu()">What it does</a>
+    <a href="#words" onclick="toggleMenu()">Kind words</a>
+    <a href="#" onclick="toggleMenu();go('url');return false;">Log in</a>
+    <button class="btn btn-primary" onclick="toggleMenu();go('url')">Get started</button>
+  </div>
+
+  <header class="hero">
+    <div class="orb orb-a" aria-hidden="true"></div>
+    <div class="orb cream orb-b" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <span class="eyebrow">Content, with intention</span>
+      <h1>Content that <em>understands</em> your brand.</h1>
+      <p class="lede">Share your website. The Mindful AI learns your voice, your visuals, and your audience — then creates social content that feels unmistakably you.</p>
+      <form class="url-bar" onsubmit="startFromHero(event)">
+        <input type="text" id="heroUrl" placeholder="yourwebsite.com" aria-label="Your website address" autocomplete="url">
+        <button class="btn btn-teal" type="submit">Begin &rarr;</button>
+      </form>
+      <p class="micro">No credit card · Your first content plan in minutes</p>
+    </div>
+  </header>
+
+  <div class="strip" aria-hidden="true">
+    <div class="strip-track">
+      <span>made for soulful brands</span><span>wellness studios</span><span>holistic practitioners</span><span>creative founders</span><span>service-based businesses</span><span>slow, intentional growth</span>
+      <span>made for soulful brands</span><span>wellness studios</span><span>holistic practitioners</span><span>creative founders</span><span>service-based businesses</span><span>slow, intentional growth</span>
+    </div>
+  </div>
+
+  <section class="section" id="how">
+    <div class="section-head reveal">
+      <span class="eyebrow">How it works</span>
+      <h2 class="h-edit">Four steps to a brand that <em>speaks</em> for you.</h2>
+      <p>No briefs, no blank pages, no chasing the algorithm. Just a calm, considered path from your website to a month of content.</p>
+    </div>
+    <div class="steps">
+      <article class="step reveal">
+        <span class="num">no. 1</span>
+        <h3>Share your website</h3>
+        <p>Drop your URL. That's the whole brief — your site already holds everything we need to know.</p>
+        <div class="line"></div>
+      </article>
+      <article class="step reveal" style="transition-delay:.08s">
+        <span class="num">no. 2</span>
+        <h3>We learn your brand</h3>
+        <p>The Mindful AI studies your voice, palette, offers, and audience — gently, thoroughly.</p>
+        <div class="line"></div>
+      </article>
+      <article class="step reveal" style="transition-delay:.16s">
+        <span class="num">no. 3</span>
+        <h3>Review your plan</h3>
+        <p>A tailored content plan arrives in your dashboard. Approve what feels right, refine what doesn't.</p>
+        <div class="line"></div>
+      </article>
+      <article class="step reveal" style="transition-delay:.24s">
+        <span class="num">no. 4</span>
+        <h3>Show up, consistently</h3>
+        <p>Your brand appears online with clarity and intention — without you carrying it alone.</p>
+        <div class="line"></div>
+      </article>
+    </div>
+  </section>
+
+  <section class="section" id="features" style="padding-top:0">
+    <div class="feature-row reveal">
+      <div class="feature-copy">
+        <span class="eyebrow">Brand voice</span>
+        <h3>It sounds like you, <em>because it listened.</em></h3>
+        <p>Most AI content sounds like everyone. The Mindful AI builds a living voice profile from your own words — your warmth, your rhythm, your way of seeing things — and writes from there.</p>
+      </div>
+      <div class="feature-art">
+        <div class="mini-card">
+          <span class="tag">Voice profile</span>
+          <h4>Warm &amp; grounded</h4>
+          <p>Speaks with presence. Invites rather than sells. Unhurried, intentional, quietly confident.</p>
+        </div>
+        <div class="orb orb-deco" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="feature-row flip reveal">
+      <div class="feature-copy">
+        <span class="eyebrow">Visual identity</span>
+        <h3>Your palette, your type, <em>your world.</em></h3>
+        <p>Colours, typography, and imagery direction are drawn straight from your website — so every post belongs to the same calm, cohesive universe.</p>
+      </div>
+      <div class="feature-art">
+        <div class="mini-card">
+          <span class="tag">Extracted palette</span>
+          <h4>Soft &amp; oceanic</h4>
+          <div class="swatches">
+            <i style="background:#4FAFA6"></i>
+            <i style="background:#2C6B65"></i>
+            <i style="background:#F7F4ED"></i>
+            <i style="background:#ECE6DA"></i>
+            <i style="background:#22302D"></i>
+          </div>
+        </div>
+        <div class="orb cream orb-deco" aria-hidden="true"></div>
+      </div>
+    </div>
+
+    <div class="feature-row reveal">
+      <div class="feature-copy">
+        <span class="eyebrow">Content rhythm</span>
+        <h3>A calendar that <em>breathes</em> with your business.</h3>
+        <p>A monthly content plan shaped around your offers and seasons — ready for your approval, never demanding your whole week.</p>
+      </div>
+      <div class="feature-art">
+        <div class="mini-card">
+          <span class="tag">This week</span>
+          <h4>3 posts ready for review</h4>
+          <p>Instagram · A note on slowing down<br>LinkedIn · Behind the rebrand<br>Pinterest · Studio palette story</p>
+        </div>
+        <div class="orb orb-deco" style="left:-30px;right:auto;top:-40px;bottom:auto" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="words">
+    <figure class="quote reveal">
+      <blockquote>"From the very beginning, it understood who I am and what my brand needs — even when I struggled to express it myself."</blockquote>
+      <cite>Mihal · Soul Plan Practitioner</cite>
+    </figure>
+  </section>
+
+  <section class="cta-band reveal">
+    <div class="orb" aria-hidden="true"></div>
+    <h2>Ready to build a brand that <em>actually feels</em> like you?</h2>
+    <p>Begin with the website you already have. We'll take it from there.</p>
+    <button class="btn btn-primary" onclick="go('url')">Let's get started</button>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div>
+        <a class="logo" href="#"><span class="dot"></span>The Mindful <em>AI</em></a>
+        <p class="blurb">Content that understands your brand. Built with intention by The Mindful Social Media Manager.</p>
+      </div>
+      <div>
+        <h5>Product</h5>
+        <ul><li><a href="#how">How it works</a></li><li><a href="#features">What it does</a></li><li><a href="#" onclick="go('url');return false;">Get started</a></li></ul>
+      </div>
+      <div>
+        <h5>Studio</h5>
+        <ul><li><a href="https://www.themindfulsmm.com" target="_blank" rel="noopener">The Mindful SMM</a></li><li><a href="https://www.instagram.com/themindfulsmm" target="_blank" rel="noopener">Instagram</a></li><li><a href="mailto:info@themindfulsmm.com">Contact</a></li></ul>
+      </div>
+      <div>
+        <h5>Legal</h5>
+        <ul><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li></ul>
+      </div>
+    </div>
+    <div class="footer-base">
+      <span>© 2026 The Mindful AI · by The Mindful Social Media Manager</span>
+      <span>Made slowly, with care.</span>
+    </div>
+  </footer>
+</section>
+
+<!-- ════════════ URL INPUT ════════════ -->
+<section class="view" id="view-url">
+  <div class="onboard">
+    <button class="back" onclick="go('landing')">&larr; Back</button>
+    <div class="orb orb-bg" aria-hidden="true"></div>
+    <div class="onboard-inner">
+      <span class="step-label">Step 1 of 2 · The Discovery</span>
+      <h1>Let's begin with <em>your website.</em></h1>
+      <p class="sub">It already says so much about you. Share the link and The Mindful AI will do the listening.</p>
+      <form class="url-bar" onsubmit="startAnalysis(event)">
+        <input type="text" id="onboardUrl" placeholder="yourwebsite.com" aria-label="Your website address" autocomplete="url">
+        <button class="btn btn-teal" type="submit">Analyse my brand &rarr;</button>
+      </form>
+      <p class="field-error" id="urlError" role="alert"></p>
+      <div class="platforms" role="group" aria-label="Choose your channels">
+        <button class="chip" aria-pressed="true" onclick="toggleChip(this)">Instagram</button>
+        <button class="chip" aria-pressed="true" onclick="toggleChip(this)">LinkedIn</button>
+        <button class="chip" aria-pressed="false" onclick="toggleChip(this)">Facebook</button>
+        <button class="chip" aria-pressed="false" onclick="toggleChip(this)">Pinterest</button>
+        <button class="chip" aria-pressed="false" onclick="toggleChip(this)">TikTok</button>
+      </div>
+      <p class="micro" style="margin-top:1.4rem;font-size:.8rem;color:#98A39F">Choose where you'd like to show up — you can change this anytime.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ ANALYSIS ════════════ -->
+<section class="view" id="view-analysis">
+  <div class="onboard">
+    <div class="onboard-inner">
+      <span class="step-label">Step 2 of 2 · The Insight</span>
+      <h1 style="margin-bottom:.5rem">Getting to <em>know you.</em></h1>
+      <p class="analysis-url" id="analysisUrl">yourwebsite.com</p>
+      <div class="analysis-orb" aria-hidden="true">
+        <div class="ring"></div><div class="ring"></div>
+        <div class="orb"></div>
+      </div>
+      <div class="analysis-steps" id="analysisSteps" aria-live="polite">
+        <div class="a-step"><span class="check"></span>Reaching your website</div>
+        <div class="a-step"><span class="check"></span>Running the Website Analysis</div>
+        <div class="a-step"><span class="check"></span>Reading tone, audience &amp; visual clues</div>
+        <div class="a-step"><span class="check"></span>Composing your Brand DNA from evidence</div>
+      </div>
+      <div class="ev-preview" id="evPreview" hidden>
+        <span class="tag">Evidence found</span>
+        <p id="evPreviewText"></p>
+      </div>
+      <div class="progress-wrap">
+        <div class="progress"><i id="progressBar"></i></div>
+        <p class="progress-label" id="progressLabel">Taking a mindful moment…</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ MANUAL DETAILS (insufficient evidence) ════════════ -->
+<section class="view" id="view-manual">
+  <div class="onboard">
+    <button class="back" onclick="go('url')">&larr; Try another website</button>
+    <div class="orb cream orb-bg" aria-hidden="true"></div>
+    <div class="onboard-inner" style="max-width:560px;text-align:left">
+      <span class="step-label" style="display:block;text-align:center">Website Analysis</span>
+      <div class="manual-alert" role="alert">
+        We could not extract enough information from this website. Please add more brand details manually.
+      </div>
+      <p class="diag" id="diagDetail"></p>
+      <p style="text-align:center;margin:-0.4rem 0 1rem"><button type="button" class="btn btn-ghost" style="padding:.55rem 1.2rem;font-size:.82rem" onclick="testAI()">Test AI connection</button></p>
+      <details class="import-box">
+        <summary>Have your own backend? Connect it here</summary>
+        <p class="diag" style="text-align:left;margin:.6rem 0">Deploy the included mindful-backend (free, ~5 min), then paste its URL. This gives the app its own AI connection and website fetcher on any hosting.</p>
+        <input class="input" id="backendUrl" placeholder="https://your-backend.vercel.app" value="">
+        <div style="text-align:center;margin-top:.8rem"><button type="button" class="btn btn-teal" style="padding:.6rem 1.4rem;font-size:.85rem" onclick="connectBackend()">Connect &amp; test</button></div>
+        <p class="diag" id="backendStatus" style="margin:.6rem 0 0"></p>
+      </details>
+      <details class="import-box">
+        <summary>Have a ready-made Brand DNA report? Paste it here</summary>
+        <textarea class="input" id="importJson" rows="5" placeholder='Paste the Brand DNA JSON (e.g. generated for you in Claude chat) and load it.'></textarea>
+        <div style="text-align:center;margin-top:.8rem"><button type="button" class="btn btn-teal" style="padding:.6rem 1.4rem;font-size:.85rem" onclick="importDNA()">Load report</button></div>
+        <p class="diag" id="importErr" style="margin:.6rem 0 0"></p>
+      </details>
+      <p class="sub" style="text-align:center;margin-bottom:2rem">Tell us in your own words — your Brand DNA will be built only from what you share here.</p>
+      <form onsubmit="startManual(event)" class="manual-form">
+        <div class="form-block"><label for="mName">Brand or business name</label><input class="input" id="mName" required placeholder="e.g. Forno Nero"></div>
+        <div class="form-block"><label for="mOffer">What you offer</label><textarea class="input" id="mOffer" required placeholder="e.g. Wood-fired Neapolitan pizza and natural wine, dine-in and takeaway"></textarea></div>
+        <div class="form-block"><label for="mAud">Who it's for</label><input class="input" id="mAud" required placeholder="e.g. Locals and families in East London who care about real ingredients"></div>
+        <div class="form-block"><label for="mTone">How you want to sound</label><input class="input" id="mTone" placeholder="e.g. Warm, a little playful, never pretentious"></div>
+        <div class="form-block"><label for="mLook">Colours / look &amp; feel (optional)</label><input class="input" id="mLook" placeholder="e.g. Charcoal, flame orange, rustic and candle-lit"></div>
+        <div class="save-row"><button class="btn btn-teal" type="submit">Build my Brand DNA &rarr;</button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════ APP SHELL ════════════ -->
+<section class="view" id="view-app">
+  <div class="app">
+    <aside class="sidebar">
+      <a class="logo" href="#" onclick="go('landing');return false;">
+        <span class="dot"></span>The Mindful <em>AI</em>
+      </a>
+      <nav class="side-nav" aria-label="App navigation">
+        <button class="side-link active" data-panel="dashboard" onclick="showPanel('dashboard',this)">
+          <svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 9.8V20h13V9.8"/></svg>
+          Overview
+        </button>
+        <button class="side-link" data-panel="dna" onclick="showPanel('dna',this)">
+          <svg viewBox="0 0 24 24"><path d="M7 3c0 5 10 7 10 12s-10 7-10 6M17 3c0 5-10 7-10 12s10 7 10 6M8.5 7h7M8.5 17h7"/></svg>
+          Brand DNA
+        </button>
+        <button class="side-link" data-panel="brand" onclick="showPanel('brand',this)">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.4"/></svg>
+          Brand
+        </button>
+        <button class="side-link" disabled style="opacity:.55;cursor:default">
+          <svg viewBox="0 0 24 24"><rect x="4" y="5" width="16" height="15" rx="3"/><path d="M4 10h16M8.5 3.5v3M15.5 3.5v3"/></svg>
+          Calendar <span class="soon">Soon</span>
+        </button>
+        <button class="side-link" disabled style="opacity:.55;cursor:default">
+          <svg viewBox="0 0 24 24"><path d="M5 5.5h14v13H5zM5 10h14M9.5 10v8.5"/></svg>
+          Content <span class="soon">Soon</span>
+        </button>
+        <button class="side-link" disabled style="opacity:.55;cursor:default">
+          <svg viewBox="0 0 24 24"><path d="M4 19c2-7 6.5-11 14-13-1 7.5-5 12-11.5 13.5L4 19z"/></svg>
+          Insights <span class="soon">Soon</span>
+        </button>
+      </nav>
+      <div class="spacer"></div>
+      <div class="brand-pill">
+        <span class="avatar"></span>
+        <div><b id="brandPillName">Your Brand</b><span id="brandPillUrl">yourwebsite.com</span></div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <span class="crumbs">Workspace / <b id="crumbPanel">Overview</b></span>
+        <div class="actions">
+          <button class="icon-btn" aria-label="Notifications"><svg viewBox="0 0 24 24"><path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2.5h-15L6 16zM10 21h4"/></svg></button>
+          <button class="btn btn-primary" style="padding:.6rem 1.3rem;font-size:.85rem" onclick="toast('Content generation is coming in the next stage ✨')">New post</button>
+        </div>
+      </div>
+
+      <!-- Dashboard panel -->
+      <div class="panel active" id="panel-dashboard">
+        <div class="greeting reveal in">
+          <span class="eyebrow">The Transformation</span>
+          <h1 style="margin-top:.7rem">Welcome back, <em id="brandNameInline">friend</em>.</h1>
+          <p>Your brand profile is ready. Here's a calm overview of where everything stands.</p>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat"><span class="label">Posts in review</span><div class="value">12</div><div class="delta">Ready when you are</div></div>
+          <div class="stat"><span class="label">Scheduled this month</span><div class="value">8</div><div class="delta">Next: Tue, 9:00</div></div>
+          <div class="stat"><span class="label">Brand confidence</span><div class="value">92%</div><div class="delta">Voice profile learning</div></div>
+        </div>
+
+        <div class="board">
+          <div class="card">
+            <div class="card-head">
+              <h3>In your queue</h3>
+              <a href="#" onclick="toast('The full content queue arrives in the next stage ✨');return false;">View all</a>
+            </div>
+            <div class="queue">
+              <div class="queue-item">
+                <div class="thumb"></div>
+                <div class="meta"><h4>A note on slowing down</h4><p>Instagram · Carousel · Drafted from your About page</p></div>
+                <span class="badge review">Review</span>
+              </div>
+              <div class="queue-item">
+                <div class="thumb t2"></div>
+                <div class="meta"><h4>Behind the rebrand: why clarity comes first</h4><p>LinkedIn · Article teaser</p></div>
+                <span class="badge review">Review</span>
+              </div>
+              <div class="queue-item">
+                <div class="thumb t3"></div>
+                <div class="meta"><h4>Signs your brand is ready to evolve</h4><p>Instagram · Reel cover + caption</p></div>
+                <span class="badge draft">Draft</span>
+              </div>
+              <div class="queue-item">
+                <div class="thumb"></div>
+                <div class="meta"><h4>Studio palette story</h4><p>Pinterest · Pin · Scheduled Thursday</p></div>
+                <span class="badge sched">Scheduled</span>
+              </div>
+            </div>
+            <div class="empty" style="margin-top:1.3rem">
+              <b>Your content plan is taking shape</b>
+              Generation, approval and publishing arrive in the next stage of The Mindful AI.
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-head"><h3>Your voice</h3><a href="#" onclick="showPanel('brand',document.querySelector('[data-panel=brand]'));return false;">Edit</a></div>
+            <p class="voice-snippet">"Warm and grounded. Invites rather than sells. Speaks of clarity, intention, and growing slowly — properly."</p>
+            <div class="voice-tags">
+              <span>Mindful</span><span>Editorial</span><span>Soul-led</span><span>Unhurried</span><span>Confident</span>
+            </div>
+            <div class="confidence">
+              <div class="row"><span>Profile strength</span><b>92%</b></div>
+              <div class="bar"><i></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Brand DNA panel -->
+      <div class="panel" id="panel-dna">
+        <div class="greeting">
+          <span class="eyebrow">The Insight</span>
+          <h1 style="margin-top:.7rem">Brand <em>DNA report</em></h1>
+          <p id="dnaSub">A strategist's reading of your brand — drawn from your website, ready to refine.</p>
+        </div>
+        <div class="dna-toolbar">
+          <span class="dna-source" id="dnaSource"></span>
+          <div class="dna-actions">
+            <button class="btn btn-ghost" style="padding:.6rem 1.3rem;font-size:.85rem" onclick="regenerateDNA()">↻ Re-analyse</button>
+            <button class="btn btn-ghost" style="padding:.6rem 1.3rem;font-size:.85rem" onclick="exportDNA()">Export JSON</button>
+            <button class="btn btn-primary" style="padding:.6rem 1.3rem;font-size:.85rem" onclick="toast('Report saved to your brand profile')">Save report</button>
+          </div>
+        </div>
+        <div id="dnaReport"></div>
+        <p class="dna-note">Tip — anything with a dotted underline is editable. Click into it and make it yours; this report belongs to you, not the machine.</p>
+      </div>
+
+      <!-- Brand settings panel -->
+      <div class="panel" id="panel-brand">
+        <div class="greeting">
+          <span class="eyebrow">The Guidance</span>
+          <h1 style="margin-top:.7rem">Brand <em>settings</em></h1>
+          <p>Everything The Mindful AI learned from your website lives here. Refine it whenever your brand evolves.</p>
+        </div>
+
+        <div class="settings-grid" style="margin-top:2.2rem">
+          <div class="card">
+            <div class="form-block">
+              <label for="bName">Brand name</label>
+              <input class="input" id="bName" value="Your Brand">
+            </div>
+            <div class="form-block">
+              <label for="bUrl">Website</label>
+              <input class="input" id="bUrl" value="yourwebsite.com">
+            </div>
+            <div class="form-block">
+              <label for="bVoice">Voice &amp; tone description</label>
+              <textarea class="input" id="bVoice">Warm and grounded. Invites rather than sells. Speaks of clarity, intention, and presence. Avoids hype, urgency, and jargon — every word is chosen the way a room is styled: slowly, and on purpose.</textarea>
+            </div>
+            <div class="form-block">
+              <label>Tone balance</label>
+              <div class="tone-row"><span>Gentle</span><input type="range" min="0" max="100" value="32" aria-label="Gentle to bold"><span>Bold</span></div>
+              <div class="tone-row"><span>Poetic</span><input type="range" min="0" max="100" value="44" aria-label="Poetic to practical"><span>Practical</span></div>
+              <div class="tone-row"><span>Personal</span><input type="range" min="0" max="100" value="28" aria-label="Personal to professional"><span>Professional</span></div>
+            </div>
+            <div class="form-block">
+              <label>Themes &amp; keywords</label>
+              <div class="kw-wrap" id="kwWrap">
+                <span class="kw">mindful branding <button onclick="removeKw(this)" aria-label="Remove keyword">✕</button></span>
+                <span class="kw">slow growth <button onclick="removeKw(this)" aria-label="Remove keyword">✕</button></span>
+                <span class="kw">brand clarity <button onclick="removeKw(this)" aria-label="Remove keyword">✕</button></span>
+                <span class="kw">soul-led business <button onclick="removeKw(this)" aria-label="Remove keyword">✕</button></span>
+                <input class="kw-input" id="kwInput" placeholder="Add a theme + Enter" onkeydown="addKw(event)">
+              </div>
+            </div>
+            <div class="save-row">
+              <button class="btn btn-teal" onclick="toast('Brand settings saved')">Save changes</button>
+              <span class="hint">Changes shape every future post.</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="card">
+              <div class="card-head"><h3>Palette</h3></div>
+              <div class="palette">
+                <div class="swatch"><i style="background:#4FAFA6"></i><code>#4FAFA6</code></div>
+                <div class="swatch"><i style="background:#2C6B65"></i><code>#2C6B65</code></div>
+                <div class="swatch"><i style="background:#F7F4ED"></i><code>#F7F4ED</code></div>
+                <div class="swatch"><i style="background:#ECE6DA"></i><code>#ECE6DA</code></div>
+                <div class="swatch"><i style="background:#22302D"></i><code>#22302D</code></div>
+              </div>
+              <p style="font-size:.8rem;color:#9AA59F;margin-top:1.1rem">Extracted from your website. Editing arrives soon.</p>
+            </div>
+            <div class="card" style="margin-top:1.2rem">
+              <div class="card-head"><h3>Typography</h3></div>
+              <div class="type-sample">
+                <div class="d">A brand that feels like you</div>
+                <div class="b">Body copy stays calm, legible, and generous with space.</div>
+                <small>Display · Serif &nbsp;&nbsp;|&nbsp;&nbsp; Body · Sans</small>
+              </div>
+            </div>
+            <div class="card" style="margin-top:1.2rem">
+              <div class="card-head"><h3>Channels</h3></div>
+              <div class="voice-tags" style="margin-top:0">
+                <span>Instagram</span><span>LinkedIn</span>
+              </div>
+              <p style="font-size:.8rem;color:#9AA59F;margin-top:1rem">Connect &amp; publish arrives in the next stage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <nav class="mobile-tabbar" aria-label="App navigation">
+    <button class="active" data-panel="dashboard" onclick="showPanel('dashboard',this)">
+      <svg viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5M5.5 9.8V20h13V9.8"/></svg>Overview
+    </button>
+    <button data-panel="dna" onclick="showPanel('dna',this)">
+      <svg viewBox="0 0 24 24"><path d="M7 3c0 5 10 7 10 12s-10 7-10 6M17 3c0 5-10 7-10 12s10 7 10 6"/></svg>DNA
+    </button>
+    <button data-panel="brand" onclick="showPanel('brand',this)">
+      <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="3.4"/></svg>Brand
+    </button>
+  </nav>
+</section>
+
+<div class="toast" id="toast" role="status"></div>
+
+<script src="src/config.js"></script>
+<script src="src/app.js"></script>
+<script src="src/engine/engine.js"></script>
+<script src="components/manual.js"></script>
+<script src="components/report.js"></script>
+</body>
+</html>
